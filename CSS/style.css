@@ -50,6 +50,7 @@ table {
 }
 /* end of the reset stylesheet */
 
+/*To add a border around every div element and put a gray background on the file*/
 body {
 	background-color: lightgray;		
 }
@@ -57,6 +58,20 @@ body {
 div {
 	border:1px solid chocolate;
 }
+/*To add a border around every div element and put a gray background on the file*/
+
+/*The position of the top navigation*/
+.top-navigation {
+	background-color: #fff;
+}
+.top-navigation > .content {
+	width: 970px;
+	height:70px;
+	margin:0 auto;
+}
+/*The position of the top navigation*/
+
+
 
 
 
