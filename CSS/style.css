@@ -61,20 +61,21 @@ table {
 /* end of the reset stylesheet */
 
 
-/*google fonts*/
-font-family: 'Roboto', sans-serif; 
-font-size: 16px; 
-color: #838994; 
-letter-spacing: 0.03em;
-/*google fonts*/
 
 /*To add a border around every div element and put a gray background on the file*/
 body {
-	background-color: lightgray;		
-}
+	background-color: lightgray;	
+	/*google fonts*/
+  sans-serif; 
+font-size: 16px; 	
+color: #838994; 
+letter-spacing: 0.03em;
+    /*google fonts*/
+}	
+
 
 div {
-	border:1px solid chocolate;
+	border:1px solid red;
 }
 /*To add a border around every div element and put a gray background on the file*/
 
