@@ -1,3 +1,13 @@
+
+/*apply a natural box layout model to all elements, but allowing components to change*/
+html{
+	box-sizing:border-box;
+}
+*, *:before,*:after{
+	box-sizing:inherit;
+}
+/*apply a natural box layout model to all elements, but allowing components to change*/
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -50,6 +60,14 @@ table {
 }
 /* end of the reset stylesheet */
 
+
+/*google fonts*/
+font-family: 'Roboto', sans-serif; 
+font-size: 16px; 
+color: #838994; 
+letter-spacing: 0.03em;
+/*google fonts*/
+
 /*To add a border around every div element and put a gray background on the file*/
 body {
 	background-color: lightgray;		
@@ -64,12 +82,31 @@ div {
 .top-navigation {
 	background-color: #fff;
 }
+
 .top-navigation > .content {
 	width: 970px;
 	height:70px;
 	margin:0 auto;
+	padding: 0px 15px;
 }
 /*The position of the top navigation*/
+
+/*logo positioning*/
+
+.logo {
+	margin-left:14px;
+	height:70px;
+}
+/*logo positioning*/
+
+.links {
+	float:right;
+
+}
+.links li{
+	display: inline-block;
+	margin-left:25px;
+}
 
 
 
