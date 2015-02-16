@@ -1,12 +1,12 @@
+/* Paul Irish Box-Sizing: Border-Box reset - apply a natural box layout model to all elements, but allowing components to change http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
 
-/*apply a natural box layout model to all elements, but allowing components to change*/
 html{
 	box-sizing:border-box;
 }
 *, *:before,*:after{
 	box-sizing:inherit;
 }
-/*apply a natural box layout model to all elements, but allowing components to change*/
+/* Paul Irish Box-Sizing: Border-Box reset - apply a natural box layout model to all elements, but allowing components to change http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -60,10 +60,32 @@ table {
 }
 /* end of the reset stylesheet */
 
+/*start of Custom Styles*/
 
+.content{
+		padding: 0 15px;
+}
 
-/*To add a border around every div element and put a gray background on the file*/
+/*Navigation section*/
+
+.top-navigation {
+	background-color: #fff;
+}
+
+.top-navigation > .content {
+		margin:0 auto;
+	width: 970px;
+	height:70px;
+
+}
+
+.top-navigation > .logo {
+	Height:70px;
+
+}
+
 body {
+	background-image: url("images/first-background-copy.jpg");
 	background-color: lightgray;	
 	/*google fonts*/
   sans-serif; 
@@ -73,42 +95,37 @@ letter-spacing: 0.03em;
     /*google fonts*/
 }	
 
+/*To add a border around every div element and put a gray background on the file*/
 
 div {
 	border:1px solid red;
 }
 /*To add a border around every div element and put a gray background on the file*/
 
-/*The position of the top navigation*/
-.top-navigation {
-	background-color: #fff;
-}
 
-.top-navigation > .content {
-	width: 970px;
-	height:70px;
-	margin:0 auto;
-	padding: 0px 15px;
-}
-/*The position of the top navigation*/
-
-/*logo positioning*/
-
-.logo {
-	margin-left:14px;
-	height:70px;
-}
-/*logo positioning*/
-
-.links {
+.top-navigation .links {
 	float:right;
-
+	font-family: 'Roboto', sans-serif;
+	color:#838994;
+	font-size: 16px;
+	margin-top:25px;
+	-webkit-font-smoothing: antialiased;
 }
-.links li{
+
+.top-navigation .links li {
 	display: inline-block;
-	margin-left:25px;
+	margin-left: 25px;
 }
 
+.top-navigation .links .active {
+	color:#c5028;
+	font-weight:500;
+}
+
+.top-navigation .links li:hover {
+	cursor: pointer; 
+	color:#333333;
+}
 
 
 
