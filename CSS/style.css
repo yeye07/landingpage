@@ -85,18 +85,19 @@ table {
 }
 
 body {
-	background-image: url("images/first-background-copy.jpg");
 	background-color: lightgray;	
 	/*google fonts*/
   sans-serif; 
 font-size: 16px; 	
 color: #838994; 
 letter-spacing: 0.03em;
+	-webkit-font-smoothing: antialiased;
+
     /*google fonts*/
 }	
 
 /*To add a border around every div element and put a gray background on the file*/
-
+`
 div {
 	border:1px solid red;
 }
@@ -126,6 +127,53 @@ div {
 	cursor: pointer; 
 	color:#333333;
 }
+
+/*Introduction*/
+.introduction {
+  background-image: url('file:///Users/Solomon/Sites/projects/startup-landing-page-clone/images/first-background-copy.jpg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;  
+  height: 45.938rem;
+  overflow: auto;
+ -webkit-font-smoothing: antialiased;
+
+
+}
+
+  .introduction h1 {
+  	margin-top: 17.5rem;
+  	font-size: 3.125rem;
+  }
+
+  .introduction h1, .introduction h3 {
+  	color:white;
+  	text-align: center;
+  	font-weight:300;
+  }
+
+  .introduction, .buttons {
+  	color:white;
+  	text-align:center;
+  	margin-top:1.563em;
+  }
+
+Button{
+  width: 9.688rem;
+  background-color: #f15a29;
+  border-color: #f15a29;
+  text-shadow: none;
+  border-style: none;
+  border-radius: 4px;
+  padding: 1rem 1.5rem;
+  color: white;
+  font-size: 1.125rem;
+}
+/*Introduction*/
+
+
+
+
 
 
 
