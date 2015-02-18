@@ -180,6 +180,40 @@ opacity: 0.75;
 /*Introduction*/
 
 
+/*cases second section*/
+.cases{
+	background-color:#ffffff;
+	overflow: hidden;	
+	padding-bottom:5rem;
+}
+
+.cases h2 {
+  font-size: 2.75rem;
+  margin: 1.625rem 0 3.125rem;
+  font-weight: 300;
+}
+
+.h2 {
+  display: block;
+  font-size: 1.5em;
+  -webkit-margin-before: 0.83em;
+  -webkit-margin-after: 0.83em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  font-weight: bold;
+}
+
+.cases, .content{
+	  color: #1d1e21;
+  text-align: center;
+  display: block;
+}
+
+li{
+	text-align: -webkit-match-parent;
+
+}
+/*cases second section*/
 
 
 
