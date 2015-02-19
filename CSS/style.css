@@ -90,7 +90,7 @@ z-index: 9999;
 body {
 	background-color: lightgray;	
 	/*google fonts*/
-  sans-serif; 
+  font-family:'roboto',sans-serif; 
 font-size: 16px; 	
 color: #838994; 
 letter-spacing: 0.03em;
@@ -109,10 +109,9 @@ div {
 
 .top-navigation .links {
 	float:right;
-	font-family: 'Roboto', sans-serif;
-	color:#838994;
-	font-size: 16px;
-	margin-top:25px;
+     color:#838994;
+	font-size: 1.04rem;
+	margin-top:1.7rem;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -123,7 +122,7 @@ div {
 
 .top-navigation .links .active {
 	color:#4c5058;
-	font-weight:500;
+	font-weight:600;
 }
 
 .top-navigation .links .li:hover{ 
@@ -218,9 +217,8 @@ opacity: 0.75;
 	display: inline-block;
 	/*Styles to assist with debugging*/
 	border: 1px solid black;
-box-sizing:border-box;
+	box-sizing:border-box;
 	height:4em;
-
 }
 
 li{
@@ -228,7 +226,13 @@ li{
 
 }
 /*cases second section*/
-
+/*footer*/
+.social .content {
+  background-color: #fff;
+  overflow: auto;
+  padding-bottom: 9.375rem;
+  text-align: center;
+/*footer*/
 
 
 
