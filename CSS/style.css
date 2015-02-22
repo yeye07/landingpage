@@ -1,20 +1,4 @@
-/* Paul Irish Box-Sizing: Border-Box reset - apply a natural box layout model to all elements, but allowing components to change http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
-
-html{
-	box-sizing:border-box;
-}
-*, *:before,*:after{
-	box-sizing:inherit;
-}
-/* Paul Irish Box-Sizing: Border-Box reset - apply a natural box layout model to all elements, but allowing components to change http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-/* this is the rest stylesheet, Using a reset stylesheet makes a page behave nicely across all browsers */
-
+/*http://meyerweb.com/eric/tools/css/reset/*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -28,213 +12,242 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
 }
-/* HTML5 display-role reset for older browsers */
+/**
+ * HTML5 display-role reset for older browsers
+ */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-/* end of the reset stylesheet */
-
-/*start of Custom Styles*/
-
-.content{
-		padding: 0 15px;
-}
-
-/*Navigation section*/
-
-.top-navigation {
-	background-color: #fff;
-	position: fixed;
-width: 100%;
-z-index: 9999;
-}
-
-.top-navigation > .content {
-		margin:0 auto;
-	width: 970px;
-	height:70px;
-
-}
-
-.top-navigation > .logo {
-	Height:70px;
-
-}
-
+/*end of reset*/
+/*start custom css*/
 body {
-	background-color: lightgray;	
-	/*google fonts*/
-  font-family:'roboto',sans-serif; 
-font-size: 16px; 	
-color: #838994; 
-letter-spacing: 0.03em;
-	-webkit-font-smoothing: antialiased;
-
-    /*google fonts*/
-}	
-
-/*To add a border around every div element and put a gray background on the file*/
-`
+    /*background-color: LightGray;*/
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
 div {
-	border:1px solid red;
+    /*border: 1px solid Chocolate;*/
 }
-/*To add a border around every div element and put a gray background on the file*/
+
+.content {
+    padding: 0 0.938rem;
+    margin: 0 auto;
+    min-width: 37.5rem;
+}
+/*Typical default display property #*/
+:focus {
+    outline: none;
+}
+/*Typical default display property #*/
 
 
+/*navigation section*/
+.top-navigation {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid #DDD;
+    z-index: 9999;
+}
+.top-navigation > .content {
+    height: 4.375rem;
+}
+.top-navigation .logo {
+    height: 4.375rem;
+}
 .top-navigation .links {
-	float:right;
-     color:#838994;
-	font-size: 1.04rem;
-	margin-top:1.7rem;
-	-webkit-font-smoothing: antialiased;
+    float: right;
+    color: #838994;
+    font-size: 1.04rem;
+    margin-top: 1.7rem;
 }
-
 .top-navigation .links li {
-	display: inline-block;
-	margin-left: 1.563rem;
+    display: inline-block;
+    margin-left: 1.563rem;
+}
+.top-navigation .links li.active {
+    color: #4c5058;
+    font-weight: 500;
+}
+.top-navigation .links li:hover {
+    cursor: pointer;
+    color: #333333;
 }
 
-.top-navigation .links .active {
-	color:#4c5058;
-	font-weight:600;
-}
-
-.top-navigation .links .li:hover{ 
-		color:#333333;
-	cursor: pointer; 
-}
-
-
-/*Introduction*/
+/*Introduction section*/
 .introduction {
-  background-image: url('file:///Users/Solomon/Sites/projects/startup-landing-page-clone/images/first-background-copy.jpg');
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: cover;  
-  height: 45.938rem;
-  overflow: auto;
- -webkit-font-smoothing: antialiased;
-
-
+    background-image: url('file:///Users/Solomon/Sites/projects/startup-landing-page-clone/images/first-background-copy.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45.938rem;
+    overflow: auto;
 }
-
-  .introduction h1 {
-  	margin-top: 17.5rem;
-  	font-size: 3.125rem;
-  }
-
-  .introduction h1, .introduction h3 {
-  	color:white;
-  	text-align: center;
-  	font-weight:300;
-  }
-
-  .introduction, .buttons {
-  	color:white;
-  	text-align:center;
-  	margin-top:1.563em;
-  }
-
-Button{
-  width: 9.688rem;
-  background-color: #f15a29;
-  border-color: #f15a29;
-  text-shadow: none;
-  border-style: none;
-  border-radius: 4px;
-  padding: 1rem 1.5rem;
-  color: white;
-  font-size: 1.125rem;
-  cursor:pointer;
-  opacity: 1;
+.introduction h1,.introduction h3 {
+    color: white;
+    text-align: center;
+    font-weight: 300;
 }
-
-button:hover{
-opacity: 0.75;
+.introduction h1 {
+    margin-top: 17.5rem;
+    font-size: 3.125rem;
 }
-
-/*Introduction*/
-
-
-/*cases second section*/
-.cases{
-	background-color:#ffffff;
-	overflow: hidden;	
-	padding-bottom:5rem;
+.introduction h3 {
+    margin-top: 1.25rem;
+    font-size: 1.563rem;
 }
+/*the buttom*/
+.introduction .buttons {
+    color: white;
+    text-align: center;
+    margin-top: 1.563rem;
+}
+/* I don't understand why the use of this part:.introduction .half {
+    width: 50%;
+    padding: 0 0.938rem;
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 1.125rem;
+    line-height: 1.2;
+}*/
 
+/*second section the cases*/
+
+.cases {
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 5rem;
+}
+.cases .content {
+    margin-top: 7.875rem;
+    padding: none;
+    color: #1d1e21;
+    text-align: center;
+}
 .cases h2 {
-  font-size: 2.75rem;
-  margin: 1.625rem 0 3.125rem;
-  font-weight: 300;
+    font-size: 2.75rem;
+    margin: 1.625rem 0 3.125rem;
+    font-weight: 300;
+}
+.cases .devices > li {
+    width: 33.3333333%;
+    float:left;
+}
+.cases .devices h3 {
+    font-weight: 400;
+    font-size: 1.563rem;
+    margin: 2.5rem 0px 1.875rem;
+}
+.cases .devices p {
+    font-weight: 300;
+    font-size: 1.313rem;
 }
 
-.h2 {
-	text-align: center;
-  display: block;
-  font-size: 1.5em;
-  -webkit-margin-before: 0.83em;
-  -webkit-margin-after: 0.83em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  font-weight: bold;
+/**
+ * Footer
+ */
+.social {
+    background-color: #fff;
+    overflow: auto;
+    padding-bottom: 9.375rem;
+    text-align: center;
+}
+.social hr {
+    border: 0;
+    border-top: 1px solid #eaebec;
+    margin: 1.313rem 0;
+}
+.social .icons > li {
+    border-radius: 1.25rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-block;
+    margin: 1.25rem 5px;
+    border: 1px solid #eaebec;
+    padding: 0.625rem 0;
+    text-align: center;
+}
+.social .icons > li:hover {
+    cursor: pointer;
+}
+.social .twitter {
+    color: #55acee;
+}
+.social .facebook {
+    color: #4c66a4;
+}
+.social .instagram {
+    color: #3f729b;
+}
+.social .copy {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #838994;
 }
 
-.cases .content{
-	color: #1d1e21;
-  text-align: center;
+/**
+ * Responsive Design
+ */
+@media (min-width: 48rem) {
+    .content {
+        width: 46rem;
+    }
+}
+@media (min-width: 62rem) {
+    .content {
+        width: 60rem;
+    }
+}
+@media (min-width: 75rem) {
+    .content {
+        width: 60%;
+    }
+}
+
+/* Chrome, Safari, Opera */ 
+@-webkit-keyframes bounce {
+    0%, 100% {margin-top: 0px;}
+    50% {margin-top: 2rem;}
+}
+/* Standard syntax */ 
+@keyframes bounce {
+    0%, 100% {margin-top: 0px;}
+    50% {margin-top: 2rem;}
 }
 
 
-.cases .devices {
-	width:33.3333333%;
-	display: inline-block;
-	/*Styles to assist with debugging*/
-	border: 1px solid black;
-	box-sizing:border-box;
-	height:4em;
+/**
+ * button
+ */
+button {
+    width: 9.688rem;
+    background-color: #f15a29;
+    border-color: #f15a29;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    color: white;
+    font-size: 1.125rem;
 }
-
-li{
-	text-align: -webkit-match-parent;
-
+button:hover {
+    background-color: #d9400e;
+    border-color: #cf3d0e;
+    cursor: pointer;
 }
-/*cases second section*/
-/*footer*/
-.social .content {
-  background-color: #fff;
-  overflow: auto;
-  padding-bottom: 9.375rem;
-  text-align: center;
-/*footer*/
-
-
-
-
 
